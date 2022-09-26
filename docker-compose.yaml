@@ -1,0 +1,11 @@
+  docker run
+  version "4.12.0"
+  services:
+    postgres:
+      image: postgres:14.5
+      environment:
+        POSTGRES_DB: "user_db"
+        POSTGRES_USER: "user.postgres"
+        POSTGRES_PASSWORD: unknown
+      ports:
+        - "80:5432"
